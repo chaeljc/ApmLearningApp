@@ -1,0 +1,61 @@
+name: Build Android APK
+
+on:
+  push:
+    branches:
+      - main
+      - claude/apm-foundation-android-app-dubW4
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Set up the Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Make Gradle wrapper executable
+        run: chmod +x ./gradlew
+
+      - name: Build the release APK
+        run: ./gradlew assembleRelease --no-daemon --stacktrace -PversionCode=${{ github.run_number }} -PversionName=1.0.${{ github.run_number }}
+
+      - name: Prepare the installer file
+        run: cp app/build/outputs/apk/release/app-release.apk APM-Foundation-Quiz.apk
+
+      - name: Upload the APK as a build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: APM-Foundation-Quiz-apk
+          path: APM-Foundation-Quiz.apk
+
+      - name: Publish the APK as a downloadable release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v1.0.${{ github.run_number }}
+          name: APM Foundation Quiz v1.0.${{ github.run_number }}
+          files: APM-Foundation-Quiz.apk
+          body: |
+            ## APM Foundation Quiz — ready to install
+
+            **To install on your Android phone:**
+
+            1. On your phone, tap **APM-Foundation-Quiz.apk** below to download it.
+            2. Open the downloaded file (check your notifications or Downloads folder).
+            3. If Android asks, allow installs from this source — then tap **Install**.
+            4. Open the app and start learning.
+
+            Fully offline. 335 questions drawn strictly from the APM Foundation course material.

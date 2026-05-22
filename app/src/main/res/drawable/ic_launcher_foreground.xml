@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- graduation cap board -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,31 L89,46 L54,61 L19,46 Z" />
+    <!-- cap base -->
+    <path
+        android:fillColor="#F4C44A"
+        android:pathData="M39,53.5 L54,60 L69,53.5 L69,67 C69,73 62,77.5 54,77.5 C46,77.5 39,73 39,67 Z" />
+    <!-- tassel string -->
+    <path
+        android:strokeColor="#F4C44A"
+        android:strokeWidth="3.2"
+        android:strokeLineCap="round"
+        android:pathData="M89,46 L89,68" />
+    <!-- tassel knob -->
+    <path
+        android:fillColor="#F4C44A"
+        android:pathData="M89,68 m-4.5,0 a4.5,4.5 0 1,0 9,0 a4.5,4.5 0 1,0 -9,0" />
+</vector>
