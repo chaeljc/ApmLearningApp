@@ -38,6 +38,7 @@ offline, with no account and no internet needed.
 
 - **Three quiz lengths** — Short (10), Medium (30) and Large (100) questions.
 - **Practice by topic** — drill any one of the 14 syllabus topics on its own.
+- **Read the learning material** — browse the full course content, section by section.
 - **One question at a time**, each with five options **A–E**.
 - **Give me a hint** — a useful nudge that doesn't give the answer away.
 - **Tell me, I don't know** — reveals the answer with a full explanation.
@@ -46,8 +47,7 @@ offline, with no account and no internet needed.
   course material.
 - **Live score and percentage**, shown at the end or whenever you quit.
 - **Shuffled and balanced** — questions are randomised every session, and the
-  correct answer is spread evenly across A–E (and audited on the results
-  screen).
+  correct answer is spread evenly across A–E.
 
 The question bank holds **335 questions** across the whole syllabus, so even a
 100-question quiz feels fresh each time.
@@ -61,6 +61,7 @@ Native Android app — **Kotlin**, **Jetpack Compose** and **Material 3**.
 | Path | Purpose |
 |------|---------|
 | `app/src/main/assets/questions.json` | The 335-question bank |
+| `app/src/main/assets/material.json` | The learning material, by section |
 | `app/src/main/java/.../data/` | Models, bank loader, quiz engine |
 | `app/src/main/java/.../ui/` | Compose screens and theme |
 | `.github/workflows/build-apk.yml` | Builds and publishes the APK |

@@ -36,7 +36,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.apmlearning.quiz.QuizViewModel
 import com.apmlearning.quiz.ui.HeaderGradient
@@ -88,8 +87,6 @@ fun ResultScreen(vm: QuizViewModel) {
                 percentage = percentage,
                 finished = finished,
             )
-            Spacer(Modifier.height(16.dp))
-            LetterAuditCard(distribution = vm.letterDistribution())
             Spacer(Modifier.height(24.dp))
 
             Button(
@@ -213,69 +210,6 @@ private fun StatBlock(label: String, value: String, modifier: Modifier = Modifie
             fontWeight = FontWeight.Bold,
             color = MaterialTheme.colorScheme.onSurfaceVariant,
         )
-    }
-}
-
-@Composable
-private fun LetterAuditCard(distribution: Map<Char, Int>) {
-    val maxCount = (distribution.values.maxOrNull() ?: 0).coerceAtLeast(1)
-    Card(
-        modifier = Modifier.fillMaxWidth(),
-        shape = RoundedCornerShape(20.dp),
-        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
-        elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
-    ) {
-        Column(modifier = Modifier.padding(20.dp)) {
-            Text(
-                text = "Answer-letter audit",
-                style = MaterialTheme.typography.titleMedium,
-                color = MaterialTheme.colorScheme.onSurface,
-            )
-            Spacer(Modifier.height(4.dp))
-            Text(
-                text = "How the correct answers were spread across A–E this session.",
-                style = MaterialTheme.typography.bodySmall,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
-            )
-            Spacer(Modifier.height(14.dp))
-            distribution.forEach { (letter, count) ->
-                Row(
-                    modifier = Modifier.padding(vertical = 5.dp),
-                    verticalAlignment = Alignment.CenterVertically,
-                ) {
-                    Text(
-                        text = letter.toString(),
-                        style = MaterialTheme.typography.titleMedium,
-                        fontWeight = FontWeight.Bold,
-                        color = MaterialTheme.colorScheme.primary,
-                        modifier = Modifier.width(24.dp),
-                    )
-                    Box(
-                        modifier = Modifier
-                            .weight(1f)
-                            .height(14.dp)
-                            .clip(RoundedCornerShape(7.dp))
-                            .background(MaterialTheme.colorScheme.surfaceVariant),
-                    ) {
-                        Box(
-                            modifier = Modifier
-                                .fillMaxWidth(count.toFloat() / maxCount)
-                                .height(14.dp)
-                                .clip(RoundedCornerShape(7.dp))
-                                .background(MaterialTheme.colorScheme.primary),
-                        )
-                    }
-                    Spacer(Modifier.width(12.dp))
-                    Text(
-                        text = count.toString(),
-                        style = MaterialTheme.typography.titleSmall,
-                        color = MaterialTheme.colorScheme.onSurface,
-                        modifier = Modifier.width(24.dp),
-                        textAlign = TextAlign.End,
-                    )
-                }
-            }
-        }
     }
 }
 

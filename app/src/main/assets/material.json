@@ -1,0 +1,504 @@
+[
+  {
+    "title": "Projects, Programmes & Portfolios",
+    "blocks": [
+      {"h": "Projects"},
+      {"p": "The purpose of a project is to bring about change in an organisation"},
+      {"p": "It balances 7 areas"},
+      {"b": ["Time", "Cost", "Risk safety", "Quality", "Scope", "Risk benefit", "Safety"]},
+      {"p": "The project will enable change in the business-as-usual environment"},
+      {"p": "For reasons of improvement compliance or safety"},
+      {"h": "Programs"},
+      {"p": "A program is a collection of related projects plus other activities focused on strategic benefits to ensure change is embedded effectively"},
+      {"p": "An organisation will balance the need for change with the need for BAU by gathering all programs, projects and BAU together in a portfolio - so the activities can be balanced and one does not overpower the other."}
+    ]
+  },
+  {
+    "title": "The Project Environment",
+    "blocks": [
+      {"h": "Project Environment"},
+      {"p": "The definition of Project Environment is.."},
+      {"p": "A collective term for the societal or organisational setting of a project program or portfolio"},
+      {"p": "This is also known as the context"},
+      {"p": "Contextual awareness of the Project Environment is important to understand the"},
+      {"b": ["Uncertainty", "Constraints", "People"]},
+      {"p": "That may affect the project"},
+      {"p": "internal or external business, economic, sociological and technological Influence and shape Strategies, policies, initiatives or targets"},
+      {"p": "That in turn define scope and prioritise Programmes"},
+      {"p": "That in turn initiate monitor and align Projects and related activities"},
+      {"p": "That deliver and implement new or transformed business operations, services, and capabilities"},
+      {"p": "To realise outcomes achieved and benefits realised’"},
+      {"p": "This contextual analysis is part of understanding a project."}
+    ]
+  },
+  {
+    "title": "Project Life Cycles",
+    "blocks": [
+      {"h": "Project Lifecycle"},
+      {"p": "The project lifecycle is defined as"},
+      {"p": "‘The series of steps a project will follow from inception to closure’"},
+      {"p": "All projects have a start middle and end.  Understanding the lifecycle helps project managers understand what will happen when and prepare"},
+      {"h": "Types of life cycle"},
+      {"p": "There are 4 types of project life cycles"},
+      {"h": "Linear (Waterfall)"},
+      {"p": "The first is the linear, waterfall or traditional life cycle, follows a series of logical steps, each being completed before the next starts."},
+      {"p": "In this life cycle, the quality and scope of the project are defined at the start and we calculate time and cost. The output is delivered at the end of the project."},
+      {"p": "Concept, Definition, Deployment and Transition are the steps taken from the APM Book of Knowledge (BoK)"},
+      {"h": "Iterative (agile)"},
+      {"p": "With the iterative, or Agile, life cycle, work is carried out in series of fixed time and cost units known as timeboxes or sprints. Given time and cost are fixed, these projects are managed by flexing scope and quality."},
+      {"p": "An output can be deployed at the end of each timebox and the final output is delivered incrementally over the life of the project."},
+      {"h": "The hybrid lifecycle"},
+      {"p": "The hybrid lifecycle combines elements of both the iterative and linear life cycles."},
+      {"h": "The extended life cycle"},
+      {"p": "The extended life cycle is similar to the liner and iterative life cycles, but picks up the early part of the operational life of the output, focusing on the adoption of the output in use and the realisation of benefits."}
+    ]
+  },
+  {
+    "title": "Roles & Responsibilities",
+    "blocks": [
+      {"h": "Roles and Responsibilities"},
+      {"p": "The project is a temporary structure and as such the roles and responsibilities of the team have to be defined clearly."},
+      {"p": "People are often seconded from their job in the organisation to work on the project and it is important that they understand their role and its responsibilities so that the project can be managed effectively."},
+      {"p": "Below is an example project organisation structure.  A number of key roles have been identified such as:"},
+      {"b": [
+        "The Sponsor: the owner and key decision maker of the project",
+        "The Project Manager: who manages the day to day of the project",
+        "The PMO (the Project Management Office): to provide support to the Project Manager",
+        "The Governance Board, which includes the Sponsor and other roles to ensure effective decision making."
+      ]}
+    ]
+  },
+  {
+    "title": "Project Management Planning",
+    "blocks": [
+      {"h": "Understanding PM Planning"},
+      {"p": "This learning objective, “Understanding project management planning”, covers a number of areas which are key parts of planning the project covering:"},
+      {"b": [
+        "The project management plan",
+        "Estimating",
+        "The Business Case",
+        "Benefits Management",
+        "Success Criteria",
+        "Stakeholder Engagement"
+      ]},
+      {"h": "Planning"},
+      {"p": "Planning determines what is to be delivered, how much it will cost, when it will be delivered, how it will be delivered and who will carry it out."},
+      {"p": "It is important at the start of a project to establish the length, cost and outputs of a project and define how these outputs will be created and the project managed."},
+      {"p": "This will be carried out in the Definition phase of a project, and the output of this planning activity is called the Project Management Plan, or PMP."},
+      {"p": "In other environments you may hear it referred to as Project Initiation Documentation (PID), the project execution plan or project delivery document. However, they are all basically the same thing."},
+      {"h": "Project Management Plan"},
+      {"p": "The PMP is not a single document, more it’s a collection of documents which together define the project fully."},
+      {"p": "The PMP has to answer these key questions about the project:"},
+      {"b": [
+        "Why? A statement of reasons the work is required",
+        "What? The objectives, scope and the deliverables of the work. So, what is the output of the project and how is it measured.",
+        "How? How is the work being created; the chosen method along with reasons for its choice",
+        "Who is involved? A project organisation structure must be included",
+        "When is it being delivered and how much will it cost? A project schedule including milestones should be produced along with budgets for expenditure and income.",
+        "Where is the project happening? The geographical locations."
+      ]},
+      {"p": "The PMP covers two distinct areas:"},
+      {"b": [
+        "1. The Strategic or Policies section -  how the project is going to be managed.",
+        "2. the Tactical or Delivery section -  the when, who, how much and what if."
+      ]},
+      {"h": "Deployment Baseline"},
+      {"p": "A baseline is the reference levels against which a project, programme or portfolio is monitored and controlled."},
+      {"p": "When the PMP is approved by the Sponsor and the Governance Board this becomes the Deployment Baseline, the reference document against which progress in the project is based."},
+      {"p": "There are differences in the baseline for linear and iterative projects."},
+      {"h": "Linear life cycles"},
+      {"p": "treat scope and quality as the driver and calculate the consequential time and cost. To put it another way, scope and quality are fixed and time and cost are estimated and subject to alteration."},
+      {"h": "Iterative life cycles"},
+      {"p": "commit to set resources over limited periods to deliver products that are developed over subsequent cycles. So, time and cost are fixed and scope and quality are estimated and flexed for control purposes"},
+      {"h": "Estimating"},
+      {"p": "The schedule of work, whether a linear or iterative project, is based on estimates."},
+      {"p": "An estimate is an approximation either of time and cost or size of the output (in an iterative project)"},
+      {"p": "At the start of a project these estimates will be less accurate as there is less detail to base them on, the accuracy will improve over the life of the project."},
+      {"p": "This gives rise to what’s called the Estimating Funnel, now shown onscreen, it starts wide and gets narrower. It’s only at the end of the project that you have exact figures."}
+    ]
+  },
+  {
+    "title": "Business Case & Benefits",
+    "blocks": [
+      {"h": "Business Case"},
+      {"p": "The Business Case is used to justify the investment in the project and is owned by the project Sponsor."},
+      {"p": "It’s important because the project is spending money, so it needs to justify whether it is worthwhile."},
+      {"p": "The BoK definition of the Business Case is:"},
+      {"p": "“Provides justification for undertaking a project, programme or portfolio."},
+      {"p": "It evaluates the benefit, cost and risk of alternative options and provides a rationale for the preferred solution”."},
+      {"p": "The Business Case documents the reasons the project or change is needed, the options considered and which have been selected."},
+      {"p": "And for the selected option the details of cost, timescale and benefits expected."},
+      {"p": "These sections should be updated as more accurate information becomes available."},
+      {"h": "Benefits Management"},
+      {"p": "Benefits management is identifying the benefits to be included with the Business Case"},
+      {"p": "the monitoring and reporting of the benefits as they are generated once the output goes into use."},
+      {"p": "Bok definition “the identification, definition, planning, tracking and realisation of benefit”."},
+      {"p": "In a linear project, this will be at the end of the project and afterwards."},
+      {"p": "In an iterative project this can happen as soon as outputs are created after the first timebox or sprint."}
+    ]
+  },
+  {
+    "title": "Success Criteria & Stakeholders",
+    "blocks": [
+      {"h": "Success Criteria and KPIs"},
+      {"p": "It is important to the project when creating both the Project Management Plan and the Business Case that there is a defined end point for the project."},
+      {"p": "These are captured as project Success Criteria and usually define the expectations of the Sponsor for the final output."},
+      {"p": "The BoK definition of Success Criteria is “the satisfaction of stakeholder needs for the deployment of a project. Note this is a different performance measure to benefits, which are focused on the strategic intent and delivering beneficial change”."},
+      {"p": "The Project Manager needs to know that these will be achieved and will define the Key Performance Indicators in the PMP which will used to monitor progress towards the Success Criteria and provide early warning, so that deviations can be addressed."},
+      {"p": "These are part of the monitoring and control systems that the Project Manager will use."},
+      {"h": "Stakeholder Engagement"},
+      {"p": "“The systematic identification, analysis, planning and implementation of actions designed to influence stakeholders”."},
+      {"p": "Stakeholder Engagement is critical to project success. A stakeholder is anyone with an interest in or influence over the project."},
+      {"p": "This will include"},
+      {"b": [
+        "those who define the output",
+        "those who make decisions or influence those decisions",
+        "those to whom the output is delivered."
+      ]},
+      {"p": "The purpose of stakeholder engagement is to"},
+      {"b": [
+        "build support for and interest in the project and its outputs",
+        "to improve the likelihood of success and the adoption of those outputs in operational use."
+      ]},
+      {"h": "Influence / Interest Matrix"},
+      {"p": "The stakeholders should be identified and their areas of interest in the project captured, along with their overall interest in the output and their level of influence over the project."},
+      {"p": "This allows the stakeholders to be prioritised, and the appropriate engagement activities defined."},
+      {"p": "These would be captured in the Communication Plan which defines:"},
+      {"b": [
+        "Who to communicate to",
+        "What they need to know",
+        "When and how they need to be communicated to, and",
+        "Who will communicate to them"
+      ]},
+      {"p": "This will be updated, reviewed and used throughout the life of the project to ensure stakeholder commitment and support."}
+    ]
+  },
+  {
+    "title": "Scope & Breakdown Structures",
+    "blocks": [
+      {"h": "Session 2:  Understanding Project Scope Management"},
+      {"p": "This learning objective is Understand Project Scope Management,"},
+      {"p": "The breakdown of project scope management can be seen below:"},
+      {"h": "Assessment criteria"},
+      {"b": [
+        "5.1 Define the term ‘scope management’",
+        "5.2 Differentiate between scope management within linear projects and scope management within iterative projects",
+        "5.3 Describe how product breakdown structures (PBS) and work breakdown structures (WBS) are used to illustrate the required scope of work",
+        "5.4 Outline how a project manager would use cost breakdown structures (CBS), organisational breakdown structures (OBS) and the responsibility assignment matrix (RAM)",
+        "5.5 Define the terms ‘configuration management’ and ‘change control’ in the context of scope management",
+        "5.6 Explain the relationship between change control and configuration management",
+        "5.7 Outline the stages in a typical change control process",
+        "5.8 Outline the activities in a typical configuration management process (including planning, identification, control, status accounting and verification audit)"
+      ]},
+      {"h": "Definition of Scope"},
+      {"p": "“All the outputs, activities and benefits that are included in the project and those which are excluded”"},
+      {"p": "Scope management is the process by which the scope of the project is identified, defined and controlled."},
+      {"p": "This learning objective covers the identification and definition of the scope using the breakdown structures and the control of the scope using Change Control and Configuration Management."},
+      {"p": "The scope of the project defines all the outputs, activities and benefits that are included in the project and those which are excluded."},
+      {"h": "The Breakdown Structures"},
+      {"p": "The breakdown structures are hierarchical diagrams that allow the project team, when planning work, to break it down from the high-level final output into the detailed elements that will be delegated and created."},
+      {"p": "Breakdown structures are useful as can simply show, as a picture, how big the project is going to be."},
+      {"p": "The product breakdown structure shows the components that the final output is made of."},
+      {"p": "A simple example of a product breakdown structure is shown onscreen. The final output, computer, has been broken down into a logical hierarchy of the components needed to create the output."},
+      {"p": "The work breakdown structure shows the detailed activities needed to create, test the outputs and monitor and control the work."},
+      {"p": "The organisation breakdown structure shows the structure for delegation of work and reporting and identifies the resource types needed in the project."},
+      {"p": "The cost breakdown structure takes all the activities from the work breakdown and details the costs associated to calculate the overall budget. This includes materials, expenses and risks."},
+      {"h": "Product Breakdown Structure (PBS)"},
+      {"p": "Shows the components that the final output is made of"},
+      {"h": "Work Breakdown Structure (WBS)"},
+      {"p": "Detailed activities needed to create the outputs and monitor and control the work"},
+      {"h": "Organisation Breakdown Structure (OBS)"},
+      {"p": "The structure for delegation of work and reporting"},
+      {"p": "Identifies the resource types needed in the project"},
+      {"h": "Cost Breakdown Structure (CBS)"},
+      {"p": "Details the costs of WBS activities to calculate the overall budget"},
+      {"p": "includes materials, expenses and risks"}
+    ]
+  },
+  {
+    "title": "Change Control & Configuration Management",
+    "blocks": [
+      {"h": "The Change Control Process"},
+      {"p": "Change is inevitable in a project, change can be driven by external influences such as legislation or technology, or changes in requirements by the customer."},
+      {"p": "Therefore, all projects need a process for capturing, assessing and approving or rejecting requests for change."},
+      {"p": "Anyone may submit a request, so they must be captured, assessed for their impact on time, cost, scope, quality, risk and benefits and a decision made on whether to implement the change or not."},
+      {"p": "The Sponsor has the responsibility for making decisions on implementing changes but may delegate some of this authority to others including the Project Manager."},
+      {"p": "Change can be driven by external influences:"},
+      {"b": [
+        "Legislation or technology",
+        "Changes in requirements by the customer"
+      ]},
+      {"p": "All projects need a process for… Capturing --> Assessing --> Approving/Rejecting  …requests for change"},
+      {"h": "Change Control Process"},
+      {"b": [
+        "1. Log the requests and categorise",
+        "2. Assess the impact of each change",
+        "3. Propose options and a recommendation",
+        "4. Decide whether to approve or reject the change",
+        "5. Implement the change."
+      ]},
+      {"h": "Configuration Management in Projects"},
+      {"p": "Configuration management is a control system for products, documents and assets. It equates to version control, document control and asset control and includes all of those elements."},
+      {"p": "It must work alongside the change control process to prevent unauthorised change and capture new versions to ensure that all those who need updated copies are provided with them."},
+      {"p": "In brief, configuration management is:"},
+      {"b": [
+        "Having mechanisms for managing, tracking and keeping control of all the project’s products",
+        "Safe and secure storage of each product with controlled access, and",
+        "The ability to select and package various components."
+      ]},
+      {"p": "Good configuration management should ensure that the whole project team is working with the same version of all the elements within the project and as such, is not optional."},
+      {"p": "The moment you have two versions of a document or product; you must have configuration management."},
+      {"h": "What is Configuration Management?"},
+      {"b": [
+        "A control system for products, documents and assets",
+        "Equates to version control, document control and asset control",
+        "Works alongside the change control process",
+        "Prevents unauthorised change",
+        "Captures new versions"
+      ]},
+      {"h": "Configuration Management is…"},
+      {"b": [
+        "Having mechanisms for managing, tracking and keeping control of all the project’s products",
+        "Safe and secure storage of each product with controlled access",
+        "The ability to select and package various components",
+        "Good configuration management should ensure that the whole project team is working with the same version of all the elements"
+      ]}
+    ]
+  },
+  {
+    "title": "Scheduling, Resources & Procurement",
+    "blocks": [
+      {"h": "Understand resource, scheduling and optimisation in a project"},
+      {"p": "The next learning objective looks at resource scheduling and optimisation in a project."},
+      {"p": "It focuses on building the project schedule and allocating resources to the activities whether they are internal resources or procured externally."},
+      {"p": "Some of this activity will be done using software tools such as Microsoft Project ."},
+      {"p": "The full breakdown of this learning objective can be seen below:"},
+      {"h": "SCHEDULE"},
+      {"p": "Focuses on:"},
+      {"b": [
+        "Building the project schedule",
+        "Allocating resources to the activities",
+        "Using software tools such as Microsoft Project"
+      ]},
+      {"h": "Assessment criteria"},
+      {"b": [
+        "6.1 State the purpose of scheduling",
+        "6.2 State the purpose of critical path analysis",
+        "6.3 State the purpose of milestones",
+        "6.4 Define the term ‘time boxing’",
+        "6.5 Outline options for resource optimisation (including resource levelling and resource smoothing)",
+        "6.6 Define the term ‘procurement strategy’"
+      ]},
+      {"h": "Activity networks and Gantt charts"},
+      {"p": "This is the sequencing of the activities identified in the work breakdown structure, which we discussed earlier."},
+      {"p": "After scoping using the product breakdown structure and work breakdown structure, identify the activities and determine their logical sequence."},
+      {"p": "This builds what is called the network, the estimates for each activity are added and the paths through the network calculated. This identifies both the critical path, the longest path through the network, and the overall duration of the project."},
+      {"p": "This is referred to as Critical Path Analysis."},
+      {"p": "The schedule can also be displayed as a Gantt Chart which shows the activities as bars indicating their length and can be linked to a calendar showing start, finish and review dates. This is the most commonly used view of plans."},
+      {"h": "Resource Scheduling"},
+      {"h": "The Three Steps"},
+      {"p": "Having identified the time scale, the next task in planning is to add the resources and ensure they are available when needed."},
+      {"p": "There are three steps in resource scheduling:"},
+      {"b": [
+        "Allocation – identifying what resources, both reusable and consumable, are needed for each activity",
+        "Scheduling – calculating the amount of resources needed and when they will be needed",
+        "Aggregation – putting the resources into blocks of resource usage for reporting purposes."
+      ]},
+      {"p": "The resources will be translated from the network and Gantt Chart to a resource histogram which shows the number of resources required per time period."},
+      {"p": "This information can then be captured cumulatively in a Cost Curve."},
+      {"h": "Procurement"},
+      {"p": "Procurement is the process by which external goods and services required by the project are acquired. It is a vital element in projects and is usually undervalued.  It includes:"},
+      {"b": [
+        "clarifying requirements",
+        "seeking suppliers",
+        "selecting a supplier",
+        "agreeing a contract."
+      ]},
+      {"p": "Procurement should be planned early in the project and may represent a significant part of the overall budget."},
+      {"p": "Value for money is essential - and will often be checked and monitored very carefully as we go through the work of Procurement."}
+    ]
+  },
+  {
+    "title": "Risk & Issue Management",
+    "blocks": [
+      {"h": "Understand Project Risk and Issue Management in the Context of a project"},
+      {"p": "Risks are events that have not yet happened."},
+      {"p": "Issues are events that have already happened."},
+      {"h": "Risk Management"},
+      {"p": "Risk Management is about managing uncertainty."},
+      {"p": "The definition of risk is:"},
+      {"p": "“The uncertainty of outcome whether positive opportunity or negative threat, the chance of an event and its consequences”."},
+      {"p": "As a project is about delivering something new or changed there is always uncertainty and if unmanaged, that uncertainty can overwhelm the project."},
+      {"p": "The breakdown of this objective can be seen below"},
+      {"h": "Assessment criteria"},
+      {"b": [
+        "7.1 Define the term ‘risk’",
+        "7.2 Explain the purpose of risk management",
+        "7.3 Outline the stages of a typical risk management process (including identification, analysis, response and closure)",
+        "7.4 Describe the use of risk registers",
+        "7.5 Define the term ‘issue’",
+        "7.6 Outline the purpose of ‘issue management’",
+        "7.7 Differentiate between an issue and a risk",
+        "7.8 State the stages of an issue resolution process"
+      ]},
+      {"h": "Issue Management"},
+      {"p": "Risks are events that have not yet happened."},
+      {"p": "Issues are events that have already happened."},
+      {"p": "Issue management is a similar process to risk management, except issues are those events which have happened, whereas risk is about uncertainty."},
+      {"p": "Issues threaten the project objectives if not resolved and must be escalated to an appropriate level of authority for resolution."},
+      {"p": "Teams would escalate to the Project Manager, and the Project Manager would escalate to the Sponsor or Governance board."},
+      {"p": "If the event can be managed at the level who encountered it, this is just a problem or concern and does not need to be managed in a formal way."},
+      {"p": "Issues, however, must be logged, evaluated and escalated with options and a recommendation, to allow the level above to make a quicker decision based on that analysis."},
+      {"p": "Issues - Those events which have happened"},
+      {"h": "Risks"},
+      {"p": "About uncertainty"},
+      {"b": [
+        "Issues threaten the project objectives if not resolved",
+        "Must be escalated to an appropriate level of authority"
+      ]},
+      {"p": "Teams --> Project Manager --> Sponsor"},
+      {"p": "If the event can be managed at the level who encountered it is a Problem / Concern and can be dealt with informally."},
+      {"b": [
+        "Issues must be logged, evaluated and escalated with options and a recommendation"
+      ]}
+    ]
+  },
+  {
+    "title": "Quality & Project Reviews",
+    "blocks": [
+      {"h": "Understand Quality and Fit for Purpose in the Context of a Project"},
+      {"p": "This objective covers the subject of quality."},
+      {"p": "Quality is about delivering the output in a manner that meets the customers stated requirements to a standard expected by the customer. This is often called “fit for purpose” in practice."},
+      {"p": "Quality is critical to the Project Manager, achieving the level of quality expected will result in project completion. Failure to do so will result in additional work and time."},
+      {"p": "This learning also includes the reviews held during the life of a project."},
+      {"h": "Assessment criteria"},
+      {"b": [
+        "8.1 Define the term ‘quality’",
+        "8.2 Outline the purpose of ‘quality management’",
+        "8.3 Define the term ‘quality planning’",
+        "8.4 Define the term ‘quality control’",
+        "8.5 Outline the purpose of ‘quality assurance’",
+        "8.6 State the purpose of: decision gates, post project reviews, benefit reviews and project audits"
+      ]},
+      {"h": "Purpose of quality"},
+      {"p": "“Delivering the output in a manner that meets the customers’ stated requirements to a standard expected by the customer”"},
+      {"p": "“Fit for purpose”"},
+      {"p": "Achieving the level of quality expected will result in project completion"},
+      {"h": "The Path to Quality"},
+      {"p": "Below is a flow chart that is called the Path to Quality and shows the steps needed to enable the Project Manager to build quality in at the start of the project and all the way through."},
+      {"p": "There are a number of steps to go through:"},
+      {"p": "When planning quality, the Project Manager must identify the expectations of the customer for both what is being delivered and any standards that must be adhered to whilst the work is carried out."},
+      {"p": "These requirements are captured in the Quality Management Plan, which will also define how the outputs will be built and tested to ensure they meet requirements."},
+      {"p": "Quality Control is the testing regime defined in the plan and should ensure that all outputs are fit for purpose."},
+      {"p": "Any failures in testing, or in audits against the standards, will trigger continuous improvement. This will look for the causes of the failure and institute corrective action to ensure there are no repeats of those failures."},
+      {"h": "The Cost of Quality"},
+      {"p": "There is a cost to managing quality appropriately in a project.  The cost of quality has three elements:"},
+      {"b": [
+        "Failure - the cost of rework or replacement",
+        "Appraisal - the cost of quality control and quality assurance or audit, and finally",
+        "Prevention - the cost of education, training and instituting standards."
+      ]},
+      {"p": "If the cost of quality is high, the usual cause is high costs of failure (things going wrong, reworks and replacements)."},
+      {"p": "To reduce these, an organisation needs to invest in Prevention and Appraisal. It is not enough to just increase Appraisal, as that will just find more errors."},
+      {"p": "The organisation has to invest in getting things right, first time."},
+      {"h": "Project Reviews"},
+      {"p": "“Project reviews take place throughout the project life cycle to check the likely or actual achievement of the objectives specified in the project management plan”."},
+      {"p": "Project Reviews are held to:"},
+      {"b": [
+        "Review progress",
+        "Check against standards",
+        "Evaluate processes",
+        "Make decisions"
+      ]},
+      {"p": "There are seven types of review"},
+      {"b": [
+        "Project Evaluation Reviews",
+        "Stage Reviews",
+        "Post Project Review",
+        "Benefits Reviews"
+      ]},
+      {"p": "are held to monitor progress, evaluate the project against its Project Management Plan and Business Case and provide a basis for reporting."},
+      {"b": [
+        "Audit Reviews",
+        "Peer Reviews"
+      ]},
+      {"p": "are checks against standards, formally and informally."},
+      {"p": "Decision Gates / Stage Gates"},
+      {"p": "are formal reviews of progress by the Sponsor and Governance Board, where the decision is made to continue with the project or close it."}
+    ]
+  },
+  {
+    "title": "Communication",
+    "blocks": [
+      {"h": "Understand Communication in the Context of a Project"},
+      {"p": "Theses next learning objectives covers Communication."},
+      {"p": "Communication is a vital subject for Project Managers."},
+      {"p": "The ability to communicate effectively supports good planning, delegation, leadership and team working."},
+      {"p": "Effective communication is when the received message is the same as the transmitted one. The elements of this learning objective are shown onscreen."},
+      {"h": "Assessment criteria"},
+      {"b": [
+        "9.1 Define the term ‘communication’",
+        "9.2 Outline the advantages of different communication methods (including face to face, physical and virtual)",
+        "9.3 Outline the disadvantages of different communication methods (including face to face, physical and virtual)",
+        "9.4 Outline the contents of a communication plan",
+        "9.5 Explain the benefits, to a project manager, of a communication plan"
+      ]},
+      {"h": "Barriers and the Need for Feedback"},
+      {"p": "Communication works by the originator encoding their idea and transmitting those ideas via a chosen medium. The message is received, decoded and the message understood."},
+      {"p": "However, the barriers to effective communication can be:"},
+      {"b": [
+        "Noise interrupting the transmission process",
+        "Use of inappropriate language, or",
+        "The receiver not listening or ignoring the message."
+      ]},
+      {"p": "It is important in projects that Feedback Loops are used to check that the message has been received and understood."},
+      {"p": "Face-to-face communication works most effectively as the it uses words, the tone and speed of voice and body language to help convey the message."},
+      {"p": "Idea  Encode  Transmit  Medium  Receive  Decode Idea"},
+      {"p": "Encode = Language, Vocabulary, Jargon, TLAs, Technical"}
+    ]
+  },
+  {
+    "title": "Leadership & Teamwork",
+    "blocks": [
+      {"h": "Understand Leadership and Teamwork Within a Project"},
+      {"p": "This area of the syllabus covers Leadership and Teamwork."},
+      {"b": [
+        "The qualities required of a leader and the areas of focus when leading a team",
+        "The development path of a team",
+        "The social roles needed in an effective team"
+      ]},
+      {"p": "In this course, we will consider a list of characteristics for both leadership and effective teams."},
+      {"h": "Assessment criteria"},
+      {"b": [
+        "10.1 Define the term ‘leadership’",
+        "10.2 Explain how a project team leader can influence team performance",
+        "10.3 Outline the challenges to a project manager when developing and leading a project team",
+        "10.4 Outline how a project manager can use models to assist team development including Belbin and Tuckman"
+      ]},
+      {"h": "Leadership"},
+      {"p": "There are many leadership characteristics, these are the personal qualities that enable the leader to inspire, motivate and keep the team together even when things are not going well."},
+      {"p": "Some examples of leadership characteristics are:"},
+      {"b": [
+        "Honesty",
+        "The ability to delegate",
+        "The ability to communicate",
+        "A sense of humour",
+        "Confidence",
+        "Commitment",
+        "A positive attitude",
+        "Creativity",
+        "The ability to inspire",
+        "Intuition"
+      ]},
+      {"p": "Importantly, John Adair wrote that the leader has three key focus areas which must be covered at all times:"},
+      {"b": [
+        "The team must achieve its given task",
+        "therefore, there must a focus on, how to do that.",
+        "The team needs to be working as a unit",
+        "therefore, the leader should endeavour to build the team, so they cooperate and work together",
+        "The individuals within the team need the opportunity to develop - to learn, to try new things",
+        "the leader must provide those kinds of opportunities in order to motivate their team."
+      ]}
+    ]
+  }
+]

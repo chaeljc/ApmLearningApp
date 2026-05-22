@@ -17,6 +17,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Category
+import androidx.compose.material.icons.filled.MenuBook
 import androidx.compose.material.icons.filled.School
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
@@ -26,8 +27,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.apmlearning.quiz.QuizSize
 import com.apmlearning.quiz.QuizViewModel
@@ -89,33 +90,17 @@ fun HomeScreen(vm: QuizViewModel) {
                 title = "Practice by topic",
                 subtitle = "Pick one of ${vm.topics.size} syllabus topics to drill",
                 onClick = { vm.openTopicPicker() },
-                leading = {
-                    Box(
-                        modifier = Modifier
-                            .size(54.dp)
-                            .clip(RoundedCornerShape(16.dp))
-                            .background(MaterialTheme.colorScheme.primaryContainer),
-                        contentAlignment = Alignment.Center,
-                    ) {
-                        Icon(
-                            Icons.Filled.Category,
-                            contentDescription = null,
-                            tint = MaterialTheme.colorScheme.primary,
-                        )
-                    }
-                },
+                leading = { IconBadge(Icons.Filled.Category) },
+            )
+            Spacer(Modifier.height(12.dp))
+
+            ActionRowCard(
+                title = "Read the learning material",
+                subtitle = "Explore the full course content, section by section",
+                onClick = { vm.openMaterialList() },
+                leading = { IconBadge(Icons.Filled.MenuBook) },
             )
 
-            Spacer(Modifier.height(28.dp))
-            Text(
-                text = "Every question, hint and explanation comes only from the " +
-                    "APM Foundation precourse material. Answers are shuffled and " +
-                    "balanced across A–E on every attempt.",
-                style = MaterialTheme.typography.bodySmall,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
-                textAlign = TextAlign.Center,
-                modifier = Modifier.fillMaxWidth().padding(horizontal = 8.dp),
-            )
             Spacer(Modifier.height(16.dp))
         }
     }
@@ -129,6 +114,23 @@ fun SectionLabel(text: String) {
         fontWeight = FontWeight.Bold,
         color = MaterialTheme.colorScheme.onSurfaceVariant,
     )
+}
+
+@Composable
+private fun IconBadge(icon: ImageVector) {
+    Box(
+        modifier = Modifier
+            .size(54.dp)
+            .clip(RoundedCornerShape(16.dp))
+            .background(MaterialTheme.colorScheme.primaryContainer),
+        contentAlignment = Alignment.Center,
+    ) {
+        Icon(
+            icon,
+            contentDescription = null,
+            tint = MaterialTheme.colorScheme.primary,
+        )
+    }
 }
 
 private fun sizeSubtitle(size: QuizSize): String = when (size) {

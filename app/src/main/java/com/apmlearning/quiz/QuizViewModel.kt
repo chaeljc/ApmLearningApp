@@ -5,13 +5,15 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.AndroidViewModel
+import com.apmlearning.quiz.data.MaterialLibrary
+import com.apmlearning.quiz.data.MaterialSection
 import com.apmlearning.quiz.data.QuestionBank
 import com.apmlearning.quiz.data.QuizEngine
 import com.apmlearning.quiz.data.QuizQuestion
 import com.apmlearning.quiz.data.QuizSession
 import com.apmlearning.quiz.data.RawQuestion
 
-enum class Screen { HOME, TOPIC_PICK, SIZE_PICK, QUIZ, RESULT }
+enum class Screen { HOME, TOPIC_PICK, SIZE_PICK, QUIZ, RESULT, MATERIAL_LIST, MATERIAL_DETAIL }
 
 /** Sizes offered for a quiz. */
 enum class QuizSize(val label: String, val count: Int) {
@@ -24,8 +26,12 @@ class QuizViewModel(app: Application) : AndroidViewModel(app) {
 
     val bank: List<RawQuestion> = QuestionBank.load(app)
     val topics: List<String> = bank.map { it.topic }.distinct().sorted()
+    val material: List<MaterialSection> = MaterialLibrary.load(app)
 
     fun questionsInTopic(topic: String): Int = bank.count { it.topic == topic }
+
+    var selectedSection by mutableStateOf<MaterialSection?>(null)
+        private set
 
     var screen by mutableStateOf(Screen.HOME)
         private set
@@ -72,6 +78,17 @@ class QuizViewModel(app: Application) : AndroidViewModel(app) {
     fun backToHomeFromTopics() { screen = Screen.HOME }
 
     fun backToTopicsFromSize() { screen = Screen.TOPIC_PICK }
+
+    fun openMaterialList() { screen = Screen.MATERIAL_LIST }
+
+    fun openSection(section: MaterialSection) {
+        selectedSection = section
+        screen = Screen.MATERIAL_DETAIL
+    }
+
+    fun backToHomeFromMaterial() { screen = Screen.HOME }
+
+    fun backToMaterialList() { screen = Screen.MATERIAL_LIST }
 
     // --- Starting a quiz ---
 
@@ -133,13 +150,4 @@ class QuizViewModel(app: Application) : AndroidViewModel(app) {
     fun percentage(): Int = if (answered == 0) 0 else (score * 100) / answered
 
     val answeredAllQuestions: Boolean get() = answered >= total && total > 0
-
-    /** Audit of how many correct answers fell on each A–E letter. */
-    fun letterDistribution(): Map<Char, Int> {
-        val counts = linkedMapOf('A' to 0, 'B' to 0, 'C' to 0, 'D' to 0, 'E' to 0)
-        quizQuestions.forEach { q ->
-            counts[q.correctLetter] = (counts[q.correctLetter] ?: 0) + 1
-        }
-        return counts
-    }
 }

@@ -9,6 +9,8 @@ import androidx.compose.ui.graphics.Brush
 import com.apmlearning.quiz.QuizViewModel
 import com.apmlearning.quiz.Screen
 import com.apmlearning.quiz.ui.screens.HomeScreen
+import com.apmlearning.quiz.ui.screens.MaterialDetailScreen
+import com.apmlearning.quiz.ui.screens.MaterialListScreen
 import com.apmlearning.quiz.ui.screens.QuizScreen
 import com.apmlearning.quiz.ui.screens.ResultScreen
 import com.apmlearning.quiz.ui.screens.SizeScreen
@@ -33,6 +35,8 @@ fun AppRoot(vm: QuizViewModel) {
             Screen.SIZE_PICK -> SizeScreen(vm)
             Screen.QUIZ -> QuizScreen(vm)
             Screen.RESULT -> ResultScreen(vm)
+            Screen.MATERIAL_LIST -> MaterialListScreen(vm)
+            Screen.MATERIAL_DETAIL -> MaterialDetailScreen(vm)
         }
     }
 }
