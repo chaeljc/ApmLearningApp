@@ -3692,17 +3692,17 @@
  {
   "id": "g5-027",
   "topic": "Change Control & Configuration Management",
-  "question": "Which two unwanted outcomes does configuration management prevent or address by working alongside change control?",
-  "correct": "Unauthorised change, by capturing new versions",
+  "question": "By working alongside change control, what two things does configuration management do?",
+  "correct": "Prevents unauthorised change and captures new versions",
   "distractors": [
-   "Budget overspend, by calculating the cost curve",
-   "Resource shortage, by aggregating resources",
-   "Schedule delay, by calculating the critical path",
-   "Poor quality, by instituting continuous improvement"
+   "Calculates the critical path and identifies milestones",
+   "Aggregates resources into blocks and produces the cost curve",
+   "Triggers continuous improvement and audits against standards",
+   "Selects suppliers and agrees a contract"
   ],
-  "hint": "One thing is prevented and another is captured.",
-  "explanation": "Configuration management works alongside change control to prevent unauthorised change and capture new versions.",
-  "source": "Works alongside the change control process\nPrevents unauthorised change\nCaptures new versions"
+  "hint": "Two short verbs are paired together in the brief description of how configuration management partners with change control.",
+  "explanation": "",
+  "source": "It must work alongside the change control process to prevent unauthorised change and capture new versions"
  },
  {
   "id": "g5-028",
