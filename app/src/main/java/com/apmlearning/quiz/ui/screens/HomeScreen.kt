@@ -61,7 +61,7 @@ fun HomeScreen(vm: QuizViewModel) {
                 }
                 Spacer(Modifier.width(12.dp))
                 Text(
-                    text = "${vm.bank.size} questions, drawn strictly from the\nofficial course learning material.",
+                    text = "Questions are drawn from the APM\nFoundation Exam pre-learning material.",
                     style = MaterialTheme.typography.bodySmall,
                     color = Color.White.copy(alpha = 0.85f),
                 )

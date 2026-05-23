@@ -41,6 +41,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -67,8 +68,12 @@ import com.apmlearning.quiz.ui.theme.WrongRedBright
 fun QuizScreen(vm: QuizViewModel) {
     val question = vm.currentQuestion ?: return
     var showQuitDialog by remember { mutableStateOf(false) }
+    val scrollState = rememberScrollState()
 
     BackHandler { showQuitDialog = true }
+
+    // Scroll back to the top whenever the user moves to a new question.
+    LaunchedEffect(vm.current) { scrollState.scrollTo(0) }
 
     Column(
         modifier = Modifier
@@ -81,7 +86,7 @@ fun QuizScreen(vm: QuizViewModel) {
             modifier = Modifier
                 .weight(1f)
                 .fillMaxWidth()
-                .verticalScroll(rememberScrollState())
+                .verticalScroll(scrollState)
                 .padding(20.dp),
         ) {
             Text(
