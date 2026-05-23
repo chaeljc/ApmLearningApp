@@ -4937,15 +4937,15 @@
  {
   "id": "g6-055",
   "topic": "Leadership & Teamwork",
-  "question": "In John Adair's model, what does the focus area concerning the given task require?",
-  "correct": "A focus on how to achieve the given task",
+  "question": "In John Adair's model, what should the leader do because the team must achieve its given task?",
+  "correct": "Focus on how to achieve the given task",
   "distractors": [
-   "A focus on building the team so they cooperate",
-   "A focus on developing individuals through new opportunities",
-   "A focus on identifying and prioritising stakeholders",
-   "A focus on testing outputs against standards"
+   "Focus on building the team so they cooperate",
+   "Focus on developing individuals through new opportunities",
+   "Focus on identifying and prioritising stakeholders",
+   "Focus on testing outputs against standards"
   ],
-  "hint": "This focus area is about achieving what the team has been given to do.",
+  "hint": "This focus area is paired with the team's need to actually complete what it has been given to do.",
   "explanation": "The team must achieve its given task, therefore there must be a focus on how to do that.",
   "source": "The team must achieve its given task\ntherefore, there must a focus on, how to do that."
  },
