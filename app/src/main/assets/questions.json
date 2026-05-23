@@ -92,15 +92,15 @@
  {
   "id": "g1-007",
   "topic": "Projects, Programmes & Portfolios",
-  "question": "Which of the following is NOT given as a reason for change in the business-as-usual environment?",
-  "correct": "Strategic benefits",
+  "question": "Which of the following is one of the three stated reasons for change in the business-as-usual environment?",
+  "correct": "Compliance",
   "distractors": [
-   "Improvement",
-   "Compliance",
-   "Safety",
-   "Innovation"
+   "Strategic benefits",
+   "Innovation",
+   "Profitability",
+   "Stakeholder satisfaction"
   ],
-  "hint": "The reasons for change are a specific set of three words; one of these options does not appear among them.",
+  "hint": "Three single-word reasons are given; this one falls between improvement and safety in that list.",
   "explanation": "The reasons for change are improvement, compliance or safety. Strategic benefits relates to programmes, not the stated reasons for change.",
   "source": "For reasons of improvement compliance or safety"
  },
@@ -467,15 +467,15 @@
  {
   "id": "g1-032",
   "topic": "The Project Environment",
-  "question": "Which of the following is NOT one of the three things contextual awareness helps understand?",
-  "correct": "Cost",
+  "question": "Which of the following is one of the three things contextual awareness of the Project Environment helps to understand?",
+  "correct": "Uncertainty",
   "distractors": [
-   "Uncertainty",
-   "Constraints",
-   "People",
-   "Time"
+   "Cost",
+   "Time",
+   "Strategies",
+   "Benefits"
   ],
-  "hint": "The three things are a specific bulleted list under contextual awareness; two of these options come from elsewhere.",
+  "hint": "Three bulleted items follow the line about contextual awareness; this one is the first of them.",
   "explanation": "Contextual awareness helps understand Uncertainty, Constraints and People. Cost is one of the 7 areas a project balances, not a contextual awareness item.",
   "source": "• Uncertainty\n• Constraints \n• People\nThat may affect the project"
  },
@@ -2537,15 +2537,15 @@
  {
   "id": "g4-005",
   "topic": "Success Criteria & Stakeholders",
-  "question": "How do Success Criteria differ from benefits?",
-  "correct": "Benefits are focused on the strategic intent and delivering beneficial change",
+  "question": "Benefits, as distinct from Success Criteria, are focused on what?",
+  "correct": "The strategic intent and delivering beneficial change",
   "distractors": [
-   "Benefits are focused on the satisfaction of stakeholder needs at deployment",
-   "Benefits are part of the monitoring and control systems",
-   "Benefits are captured only in the Communication Plan",
-   "Benefits define the resource types needed in the project"
+   "The satisfaction of stakeholder needs at the deployment of a project",
+   "The monitoring and control of project progress against the baseline",
+   "The cost, timescale and benefits expected for the selected option",
+   "The systematic engagement of stakeholders across the project"
   ],
-  "hint": "The note distinguishes the performance measures by what each focuses on.",
+  "hint": "The two terms differ in what they focus on — one looks at stakeholder satisfaction at deployment, the other at something more strategic.",
   "explanation": "Success Criteria are a different performance measure to benefits, which are focused on the strategic intent and delivering beneficial change.",
   "source": "Note this is a different performance measure to benefits, which are focused on the strategic intent and delivering beneficial change”."
  },
@@ -2657,22 +2657,22 @@
  {
   "id": "g4-013",
   "topic": "Success Criteria & Stakeholders",
-  "question": "Which of the following is NOT listed as included among stakeholders?",
-  "correct": "Those who supply external goods and services to the project",
+  "question": "Which of the following groups is listed as one of the stakeholders of a project?",
+  "correct": "Those to whom the output is delivered",
   "distractors": [
-   "Those who define the output",
-   "Those who make decisions or influence those decisions",
-   "Those to whom the output is delivered",
-   "Anyone with an interest in or influence over the project"
+   "Those who supply external goods and services to the project",
+   "Those who carry out quality control testing on each output",
+   "Those who provide version control of project documents",
+   "Those who calculate the cost breakdown structure for the project"
   ],
-  "hint": "Three specific groups are listed; one option here is not among them.",
+  "hint": "Three specific groups are listed under the stakeholder definition; this one concerns who receives the project's output.",
   "explanation": "The three groups listed as stakeholders are those who define the output, those who make or influence decisions, and those to whom the output is delivered; suppliers are not listed.",
   "source": "those who define the output"
  },
  {
   "id": "g4-014",
   "topic": "Success Criteria & Stakeholders",
-  "question": "Stakeholders include those who do what with regard to the output?",
+  "question": "Stakeholders are described as including those who do which of the following?",
   "correct": "Define the output",
   "distractors": [
    "Audit the output against standards",
@@ -3932,15 +3932,15 @@
  {
   "id": "g5-043",
   "topic": "Scheduling, Resources & Procurement",
-  "question": "Which of the following is NOT one of the three steps in resource scheduling?",
-  "correct": "Procurement",
+  "question": "Which of the following is one of the three steps in resource scheduling?",
+  "correct": "Allocation",
   "distractors": [
-   "Allocation",
-   "Scheduling",
-   "Aggregation",
-   "Critical Path Analysis"
+   "Procurement",
+   "Critical Path Analysis",
+   "Configuration Management",
+   "Quality Control"
   ],
-  "hint": "Three steps are listed for resource scheduling; one option here belongs to network and schedule analysis.",
+  "hint": "The three resource scheduling steps are short single words; this one identifies what resources each activity needs.",
   "explanation": "The three steps in resource scheduling are allocation, scheduling and aggregation; procurement is the separate process for acquiring external goods and services.",
   "source": "There are three steps in resource scheduling:\nAllocation – identifying what resources, both reusable and consumable, are needed for each activity\nScheduling – calculating the amount of resources needed and when they will be needed\nAggregation – putting the resources into blocks of resource usage for reporting purposes."
  },
