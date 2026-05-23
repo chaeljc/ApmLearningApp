@@ -370,7 +370,11 @@ private fun FeedbackCard(vm: QuizViewModel, question: QuizQuestion) {
                     fontWeight = FontWeight.Bold,
                 )
             }
-            Spacer(Modifier.height(8.dp))
+            val showExplanation = !explanationIsRedundant(
+                question.raw.explanation,
+                question.raw.source,
+            )
+            if (!correct || showExplanation) Spacer(Modifier.height(8.dp))
             if (!correct) {
                 Text(
                     text = "The correct answer is ${question.correctLetter} — $correctText",
@@ -378,13 +382,15 @@ private fun FeedbackCard(vm: QuizViewModel, question: QuizQuestion) {
                     fontWeight = FontWeight.SemiBold,
                     color = MaterialTheme.colorScheme.onSurface,
                 )
-                Spacer(Modifier.height(6.dp))
             }
-            Text(
-                text = question.raw.explanation,
-                style = MaterialTheme.typography.bodyMedium,
-                color = MaterialTheme.colorScheme.onSurface,
-            )
+            if (showExplanation) {
+                if (!correct) Spacer(Modifier.height(6.dp))
+                Text(
+                    text = question.raw.explanation,
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurface,
+                )
+            }
             Spacer(Modifier.height(12.dp))
             SourceQuote(question.raw.source, accent)
             Spacer(Modifier.height(14.dp))
@@ -520,3 +526,22 @@ private fun QuitDialog(
         },
     )
 }
+
+/**
+ * True when [explanation] is mostly just a paraphrase of [source] — i.e. 80%+
+ * of the explanation's meaningful words also appear in the source. Used to
+ * avoid showing the same content twice in the feedback card.
+ */
+private fun explanationIsRedundant(explanation: String, source: String): Boolean {
+    val expWords = significantWords(explanation)
+    if (expWords.size < 4) return false
+    val srcWords = significantWords(source)
+    val covered = expWords.intersect(srcWords).size.toDouble() / expWords.size.toDouble()
+    return covered >= 0.8
+}
+
+private fun significantWords(s: String): Set<String> =
+    s.lowercase()
+        .split(Regex("[^a-z0-9]+"))
+        .filter { it.length > 2 }
+        .toSet()
