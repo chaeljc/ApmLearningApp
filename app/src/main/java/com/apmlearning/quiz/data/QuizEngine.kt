@@ -18,15 +18,23 @@ object QuizEngine {
     }
 
     /**
-     * Picks up to [size] questions. Draws round-robin across topics so the test
-     * spans the whole document, then shuffles the final order so the starting
-     * question is random.
+     * Picks up to [size] questions. First dedups the pool by normalised
+     * question stem so the same question never appears twice in one session,
+     * then draws round-robin across topics so the test spans the whole
+     * document, then shuffles the final order so the starting question is
+     * random.
      */
     private fun selectQuestions(pool: List<RawQuestion>, size: Int): List<RawQuestion> {
         if (pool.isEmpty()) return emptyList()
-        val target = minOf(size, pool.size)
 
-        val buckets = pool.groupBy { it.topic }
+        val seenStems = HashSet<String>()
+        val deduped = ArrayList<RawQuestion>(pool.size)
+        for (q in pool.shuffled()) {
+            if (seenStems.add(stemKey(q.question))) deduped.add(q)
+        }
+
+        val target = minOf(size, deduped.size)
+        val buckets = deduped.groupBy { it.topic }
             .map { (_, qs) -> qs.shuffled().toMutableList() }
             .toMutableList()
         buckets.shuffle()
@@ -40,6 +48,10 @@ object QuizEngine {
         }
         return result.shuffled()
     }
+
+    /** Normalised key used to detect questions with the same stem. */
+    private fun stemKey(stem: String): String =
+        stem.lowercase().replace(Regex("[^a-z0-9]+"), " ").trim()
 
     /**
      * Mandatory rule: keep a per-letter counter, place each correct answer in a
