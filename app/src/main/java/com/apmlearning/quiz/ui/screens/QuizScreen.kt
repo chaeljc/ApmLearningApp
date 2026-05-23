@@ -370,24 +370,12 @@ private fun FeedbackCard(vm: QuizViewModel, question: QuizQuestion) {
                     fontWeight = FontWeight.Bold,
                 )
             }
-            val showExplanation = !explanationIsRedundant(
-                question.raw.explanation,
-                question.raw.source,
-            )
-            if (!correct || showExplanation) Spacer(Modifier.height(8.dp))
             if (!correct) {
+                Spacer(Modifier.height(8.dp))
                 Text(
                     text = "The correct answer is ${question.correctLetter} — $correctText",
                     style = MaterialTheme.typography.bodyMedium,
                     fontWeight = FontWeight.SemiBold,
-                    color = MaterialTheme.colorScheme.onSurface,
-                )
-            }
-            if (showExplanation) {
-                if (!correct) Spacer(Modifier.height(6.dp))
-                Text(
-                    text = question.raw.explanation,
-                    style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.onSurface,
                 )
             }
@@ -527,21 +515,3 @@ private fun QuitDialog(
     )
 }
 
-/**
- * True when [explanation] is mostly just a paraphrase of [source] — i.e. 80%+
- * of the explanation's meaningful words also appear in the source. Used to
- * avoid showing the same content twice in the feedback card.
- */
-private fun explanationIsRedundant(explanation: String, source: String): Boolean {
-    val expWords = significantWords(explanation)
-    if (expWords.size < 4) return false
-    val srcWords = significantWords(source)
-    val covered = expWords.intersect(srcWords).size.toDouble() / expWords.size.toDouble()
-    return covered >= 0.8
-}
-
-private fun significantWords(s: String): Set<String> =
-    s.lowercase()
-        .split(Regex("[^a-z0-9]+"))
-        .filter { it.length > 2 }
-        .toSet()
