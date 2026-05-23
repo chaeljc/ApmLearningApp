@@ -362,7 +362,7 @@
  {
   "id": "g1-025",
   "topic": "Projects, Programmes & Portfolios",
-  "question": "Which statement about projects, programmes and portfolios is correct?",
+  "question": "Which of the following statements is correct?",
   "correct": "A programme is a collection of related projects plus other activities focused on strategic benefits",
   "distractors": [
    "A project is a collection of related programmes focused on strategic benefits",
@@ -370,7 +370,7 @@
    "BAU brings about change in an organisation",
    "A portfolio is the series of steps a project follows from inception to closure"
   ],
-  "hint": "Identify which grouping is described as a collection of related projects.",
+  "hint": "One of the statements matches the document's definition exactly; the others swap key terms around.",
   "explanation": "A programme is defined as a collection of related projects plus other activities focused on strategic benefits to ensure change is embedded effectively.",
   "source": "A program is a collection of related projects plus other activities focused on strategic benefits to ensure change is embedded effectively"
  },
