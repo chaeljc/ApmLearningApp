@@ -318,12 +318,12 @@
   "id": "g1-022",
   "topic": "Projects, Programmes & Portfolios",
   "question": "Which of the following is included in a portfolio but is NOT itself a project or a programme?",
-  "correct": "BAU",
+  "correct": "Business-as-usual operations",
   "distractors": [
-   "Strategic benefits",
-   "The project lifecycle",
-   "Contextual awareness",
-   "The deployment baseline"
+   "Strategic benefits realisation",
+   "Project lifecycle documentation",
+   "Contextual awareness analysis",
+   "Deployment baseline reviews"
   ],
   "hint": "Think about the ordinary operations that sit alongside change activities.",
   "explanation": "A portfolio gathers all programmes, projects and BAU together; BAU is the business-as-usual element.",
@@ -707,15 +707,15 @@
  {
   "id": "g1-048",
   "topic": "The Project Environment",
-  "question": "Which of the following is delivered and implemented by projects in the project environment chain?",
-  "correct": "Services and capabilities",
+  "question": "Which set of things do projects deliver and implement, according to the project environment chain?",
+  "correct": "Business operations, services and capabilities",
   "distractors": [
-   "Strategies and policies",
-   "Programmes and portfolios",
-   "Constraints and uncertainties",
-   "Initiatives and targets"
+   "Strategies, policies and initiatives",
+   "Programmes, projects and portfolios",
+   "Constraints, uncertainties and people",
+   "Influences, initiatives and targets"
   ],
-  "hint": "Along with business operations, two further things are delivered.",
+  "hint": "The doc lists three items in this set; they are what gets delivered, new or transformed, at the project end of the chain.",
   "explanation": "Projects deliver and implement new or transformed business operations, services, and capabilities.",
   "source": "new or transformed business operations, services, and capabilities"
  },
@@ -770,9 +770,9 @@
   "question": "Which of the following items, listed as something contextual awareness helps understand, refers to limits or restrictions on the project?",
   "correct": "Constraints",
   "distractors": [
+   "Uncertainty",
+   "People",
    "Strategies",
-   "Targets",
-   "Capabilities",
    "Outcomes"
   ],
   "hint": "Of the three contextual awareness items, this one refers to things that restrict what the project can do.",
@@ -888,7 +888,7 @@
   "id": "g2-005",
   "topic": "Project Life Cycles",
   "question": "How does the linear life cycle handle its series of steps?",
-  "correct": "Each step is completed before the next starts",
+  "correct": "Steps are carried out one before the next begins",
   "distractors": [
    "Steps are carried out in fixed time and cost units",
    "Steps flex scope and quality as work progresses",
@@ -1300,7 +1300,7 @@
    "They are procured as external goods and services",
    "They are assigned by the APM Book of Knowledge"
   ],
-  "hint": "They come from their existing job in the organisation.",
+  "hint": "Project staff usually come temporarily from somewhere else, not from external hiring.",
   "explanation": "People are often seconded from their job in the organisation to work on the project.",
   "source": "People are often seconded from their job in the organisation to work on the project"
  },
@@ -1520,10 +1520,10 @@
   "question": "Who else is included on the Governance Board alongside the Sponsor?",
   "correct": "Other roles, to ensure effective decision making",
   "distractors": [
-   "Only the Project Manager and the PMO",
-   "Only external suppliers and customer representatives",
-   "Only the seconded team members from the organisation",
-   "Only the project's day-to-day delivery team"
+   "Just the Project Manager and the PMO",
+   "A panel of external suppliers and customer representatives",
+   "Seconded team members from the organisation",
+   "Members of the project's day-to-day delivery team"
   ],
   "hint": "The Governance Board's wider membership exists to support good decisions.",
   "explanation": "The Governance Board includes the Sponsor and other roles to ensure effective decision making.",
@@ -1623,7 +1623,7 @@
   "id": "g2-054",
   "topic": "Roles & Responsibilities",
   "question": "How are team members typically brought onto a project from elsewhere in the organisation?",
-  "correct": "People are often seconded from their job in the organisation to work on the project",
+  "correct": "Team members are often seconded from their job in the organisation to work on the project",
   "distractors": [
    "Team members are hired permanently for the duration of business-as-usual",
    "Team members are procured externally as goods and services",
@@ -1655,10 +1655,10 @@
   "question": "What does planning determine about a project?",
   "correct": "What is to be delivered, how much it will cost, when it will be delivered, how it will be delivered and who will carry it out",
   "distractors": [
-   "Only the cost and the schedule of the project",
-   "Only the scope and quality of the final output",
+   "Only the cost and the schedule of the project from start to finish",
+   "Only the scope and quality of the final output, not cost or schedule",
    "The strategic benefits of a programme of related projects",
-   "The geographical locations and the procurement strategy only"
+   "Only the geographical locations and the procurement strategy"
   ],
   "hint": "Planning answers a broad set of questions covering delivery, cost, timing, method and people.",
   "explanation": "Planning determines what is to be delivered, how much it will cost, when it will be delivered, how it will be delivered and who will carry it out.",
@@ -1805,9 +1805,9 @@
   "question": "In the PMP key questions, what should be produced to answer 'When is it being delivered and how much will it cost?'",
   "correct": "A project schedule including milestones, along with budgets for expenditure and income",
   "distractors": [
-   "A project organisation structure",
-   "A statement of reasons the work is required",
-   "The geographical locations of the project",
+   "A project organisation structure showing every role",
+   "A statement of the reasons the work is required",
+   "Just the geographical locations of the project sites",
    "The objectives, scope and deliverables of the work"
   ],
   "hint": "It combines a schedule with budgets.",
@@ -1835,10 +1835,10 @@
   "question": "The PMP covers two distinct areas. What is the Strategic or Policies section concerned with?",
   "correct": "How the project is going to be managed",
   "distractors": [
-   "The when, who, how much and what if",
-   "The geographical locations of the project",
-   "The reference levels for monitoring and controlling the project",
-   "The benefits to be included with the Business Case"
+   "When, who, how much and what if delivery details",
+   "Geographical locations where the project is happening",
+   "Reference levels for monitoring and controlling the project",
+   "Benefits to be included with the Business Case"
   ],
   "hint": "One section is about management; the other about delivery detail.",
   "explanation": "The Strategic or Policies section - how the project is going to be managed.",
@@ -2028,12 +2028,12 @@
   "id": "g3-026",
   "topic": "Project Management Planning",
   "question": "Why are estimates less accurate at the start of a project?",
-  "correct": "There is less detail to base them on",
+  "correct": "Less detail is available on which to base them",
   "distractors": [
-   "The Sponsor has not yet approved the Business Case",
-   "The Governance Board has not yet met",
-   "The Estimating Funnel has not yet been drawn",
-   "The output has not yet gone into operational use"
+   "Approval of the Business Case from the Sponsor is still pending",
+   "Until the Governance Board has met, figures cannot be set",
+   "Drawing the Estimating Funnel has not yet been completed",
+   "Operational use of the output has not yet begun"
   ],
   "hint": "It relates to the amount of detail available early on.",
   "explanation": "At the start of a project these estimates will be less accurate as there is less detail to base them on.",
@@ -2088,12 +2088,12 @@
   "id": "g3-030",
   "topic": "Project Management Planning",
   "question": "Which of the following is NOT one of the six key questions the PMP has to answer about the project?",
-  "correct": "Which risks are present",
+  "correct": "Which risks have been identified for the project",
   "distractors": [
-   "Why?",
-   "What?",
-   "How?",
-   "Where is the project happening?"
+   "Why is the work required",
+   "What is the output of the project",
+   "How is the work being created",
+   "Where is the project happening"
   ],
   "hint": "The PMP answers Why, What, How, Who, When-and-how-much, and Where.",
   "explanation": "The PMP has to answer Why, What, How, Who is involved, When is it being delivered and how much will it cost, and Where is the project happening.",
@@ -2208,7 +2208,7 @@
   "id": "g3-038",
   "topic": "Business Case & Benefits",
   "question": "For the preferred solution, what does the Business Case provide?",
-  "correct": "A rationale",
+  "correct": "A rationale for the preferred solution",
   "distractors": [
    "A schedule of milestones",
    "A project organisation structure",
@@ -2255,10 +2255,10 @@
   "question": "When should the sections of the Business Case be updated?",
   "correct": "As more accurate information becomes available",
   "distractors": [
-   "Only when the Sponsor changes",
-   "Only at the very end of the project",
-   "Only when the Governance Board requests it",
-   "Only after the output goes into operational use"
+   "Whenever the Sponsor role changes hands",
+   "At the very end of the project",
+   "When the Governance Board explicitly requests it",
+   "After the output goes into operational use"
   ],
   "hint": "It relates to the improving accuracy of information.",
   "explanation": "These sections should be updated as more accurate information becomes available.",
@@ -2345,10 +2345,10 @@
   "question": "In an iterative project, when can Benefits Management happen?",
   "correct": "As soon as outputs are created after the first timebox or sprint",
   "distractors": [
-   "Only at the end of the project and afterwards",
-   "Only before the first timebox begins",
-   "Only once the Deployment Baseline is approved",
-   "Only when the Estimating Funnel reaches its narrowest point"
+   "At the end of the project and afterwards",
+   "Before the first timebox begins",
+   "Once the Deployment Baseline is approved",
+   "When the Estimating Funnel reaches its narrowest point"
   ],
   "hint": "Iterative projects deliver outputs incrementally.",
   "explanation": "In an iterative project this can happen as soon as outputs are created after the first timebox or sprint.",
@@ -2405,10 +2405,10 @@
   "question": "Which of the following best describes what the Business Case records about the options it considers?",
   "correct": "Both the options considered and which have been selected",
   "distractors": [
-   "Only the option finally selected, without listing the others",
-   "Only the rejected options, to show what was avoided",
-   "Only options proposed by the Project Manager",
-   "Only options that match the Deployment Baseline"
+   "Just the option finally selected, without listing the others",
+   "The rejected options, to show what was avoided",
+   "Options proposed only by the Project Manager",
+   "Options that match the Deployment Baseline"
   ],
   "hint": "The Business Case is transparent about all options that were on the table.",
   "explanation": "The Business Case documents the reasons the project or change is needed, the options considered and which have been selected.",
@@ -2432,7 +2432,7 @@
  {
   "id": "g3-053",
   "topic": "Business Case & Benefits",
-  "question": "Benefits are focused on what, which makes them a different performance measure to Success Criteria?",
+  "question": "Benefits, as a different performance measure to Success Criteria, are focused on what?",
   "correct": "The strategic intent and delivering beneficial change",
   "distractors": [
    "The satisfaction of stakeholder needs for deployment",
@@ -2480,10 +2480,10 @@
   "question": "When is it important to establish a defined end point for the project?",
   "correct": "When creating both the Project Management Plan and the Business Case",
   "distractors": [
-   "Only when closing the project",
-   "Only when creating the resource histogram",
-   "Only after the first timebox is delivered",
-   "Only when the Governance Board meets"
+   "Just before closing the project",
+   "While creating the resource histogram",
+   "After the first timebox is delivered",
+   "Whenever the Governance Board meets"
   ],
   "hint": "Two key documents are mentioned together.",
   "explanation": "It is important when creating both the Project Management Plan and the Business Case that there is a defined end point for the project.",
@@ -2645,10 +2645,10 @@
   "question": "Which best describes a stakeholder?",
   "correct": "Anyone with an interest in or influence over the project",
   "distractors": [
-   "Only the Sponsor and the Governance Board",
-   "Only those who carry out the project activities",
-   "Only the customer to whom the output is delivered",
-   "Only the Project Manager and the PMO"
+   "Just the Sponsor and the Governance Board",
+   "Solely those who carry out the project activities",
+   "Just the customer to whom the output is delivered",
+   "The Project Manager and the PMO alone"
   ],
   "hint": "The definition is broad, covering interest or influence.",
   "explanation": "A stakeholder is anyone with an interest in or influence over the project.",
@@ -2795,10 +2795,10 @@
   "question": "According to the Communication Plan, besides who to communicate to and what they need to know, what else is defined?",
   "correct": "When and how they need to be communicated to, and who will communicate to them",
   "distractors": [
-   "The cost, timescale and benefits of communication",
-   "The materials, expenses and risks of communication",
-   "The resource types and reporting lines for communication",
-   "The version control and storage of communication"
+   "Cost, timescale and benefits of communication",
+   "Materials, expenses and risks of communication",
+   "Resource types and reporting lines for communication",
+   "Version control and storage of communication"
   ],
   "hint": "Two further elements complete the list of four.",
   "explanation": "The Communication Plan also defines when and how stakeholders need to be communicated to, and who will communicate to them.",
@@ -2927,17 +2927,17 @@
  {
   "id": "g4-031",
   "topic": "Scope & Breakdown Structures",
-  "question": "In iterative life cycles, which two project elements are estimated and flexed for control purposes?",
-  "correct": "Scope and quality",
+  "question": "Alongside outputs and activities, what is the third category of thing that the scope of a project includes?",
+  "correct": "Benefits",
   "distractors": [
-   "Time and cost",
-   "Materials and expenses",
-   "Risk and benefits",
-   "Resources and milestones"
+   "Risks",
+   "Stakeholders",
+   "Constraints",
+   "Costs"
   ],
-  "hint": "In iterative projects, time and cost are fixed.",
+  "hint": "The scope definition lists three categories that are included in the project; outputs and activities are two of them.",
   "explanation": "Iterative life cycles commit to set resources over limited periods so time and cost are fixed and scope and quality are estimated and flexed for control purposes.",
-  "source": "So, time and cost are fixed and scope and quality are estimated and flexed for control purposes"
+  "source": "All the outputs, activities and benefits that are included in the project and those which are excluded"
  },
  {
   "id": "g4-032",
@@ -3160,7 +3160,7 @@
    "Product breakdown structures (PBS) and cost breakdown structures (CBS)",
    "Organisational breakdown structures (OBS) and the responsibility assignment matrix (RAM)"
   ],
-  "hint": "It pairs the product and work structures.",
+  "hint": "The pair is named together in the syllabus heading about illustrating scope.",
   "explanation": "The product breakdown structure (PBS) and the work breakdown structure (WBS) are the two structures used to illustrate the required scope of work.",
   "source": "Describe how product breakdown structures (PBS) and work breakdown structures (WBS) are used to illustrate the required scope of work"
  },
@@ -3290,10 +3290,10 @@
   "question": "What does the scope of the project define regarding outputs, activities and benefits?",
   "correct": "All the outputs, activities and benefits that are included in the project and those which are excluded",
   "distractors": [
-   "Only the outputs and activities that are included in the project",
-   "Only the benefits that will be realised after closure",
-   "Only the activities to be delegated and created",
-   "Only the outputs that are excluded from the project"
+   "Just the outputs and activities that are included in the project",
+   "Just the benefits that will be realised after closure",
+   "Activities to be delegated and created, but nothing else",
+   "Outputs that are excluded from the project"
   ],
   "hint": "It covers both what is in and what is out.",
   "explanation": "The scope of the project defines all the outputs, activities and benefits that are included in the project and those which are excluded.",
@@ -3365,12 +3365,12 @@
   "question": "Who may submit a request for change?",
   "correct": "Anyone may submit a request",
   "distractors": [
-   "Only the Sponsor",
-   "Only the Project Manager",
-   "Only the customer",
-   "Only the Governance Board"
+   "Just the Sponsor",
+   "The Project Manager alone",
+   "The customer exclusively",
+   "Members of the Governance Board"
   ],
-  "hint": "",
+  "hint": "There is no restriction on who can raise a change request — it is open to all.",
   "explanation": "Anyone may submit a request, so they must be captured and assessed.",
   "source": "Anyone may submit a request, so they must be captured, assessed for their impact on time, cost, scope, quality, risk and benefits and a decision made on whether to implement the change or not."
  },
@@ -3655,7 +3655,7 @@
    "It is optional if the Sponsor delegates authority",
    "It is optional in iterative projects"
   ],
-  "hint": "",
+  "hint": "Being optional would mean teams could ignore version control; the rule says the opposite.",
   "explanation": "Because good configuration management ensures the whole team works with the same version, it is not optional.",
   "source": "Good configuration management should ensure that the whole project team is working with the same version of all the elements within the project and as such, is not optional."
  },
@@ -3722,15 +3722,15 @@
  {
   "id": "g5-029",
   "topic": "Scheduling, Resources & Procurement",
-  "question": "Which software tool is named as an example used in scheduling activity?",
+  "question": "What software tool is named as an example used for scheduling activity?",
   "correct": "Microsoft Project",
   "distractors": [
-   "A resource histogram",
-   "A Gantt Chart",
-   "A cost curve",
-   "A product breakdown structure"
+   "Primavera P6",
+   "Asana",
+   "Jira",
+   "Microsoft Excel"
   ],
-  "hint": "It is named as a software tool, not a chart or diagram.",
+  "hint": "It is a well-known scheduling software from a major office-software vendor.",
   "explanation": "Some of this activity will be done using software tools such as Microsoft Project.",
   "source": "Some of this activity will be done using software tools such as Microsoft Project ."
  },
@@ -3790,7 +3790,7 @@
    "The path with the highest cost",
    "The path with the fewest milestones"
   ],
-  "hint": "It is described in terms of path length through the network.",
+  "hint": "Of all the paths through the network, this one is the longest.",
   "explanation": "The critical path is the longest path through the network.",
   "source": "This identifies both the critical path, the longest path through the network, and the overall duration of the project."
  },
@@ -4113,7 +4113,7 @@
   "id": "g5-055",
   "topic": "Scheduling, Resources & Procurement",
   "question": "Which of the following is NOT listed as an activity included in procurement?",
-  "correct": "Aggregating resources into blocks for reporting",
+  "correct": "Aggregating resources",
   "distractors": [
    "Clarifying requirements",
    "Seeking suppliers",
@@ -4368,7 +4368,7 @@
   "id": "g6-017",
   "topic": "Risk & Issue Management",
   "question": "Which of the following is NOT one of the stages of a typical risk management process?",
-  "correct": "Escalation to the Sponsor",
+  "correct": "Escalation",
   "distractors": [
    "Identification",
    "Analysis",
@@ -4503,12 +4503,12 @@
   "id": "g6-026",
   "topic": "Quality & Project Reviews",
   "question": "What triggers continuous improvement on the Path to Quality?",
-  "correct": "Any failures in testing, or in audits against the standards",
+  "correct": "Failures in testing, or in audits against the standards",
   "distractors": [
-   "The approval of the Project Management Plan by the Sponsor",
-   "The successful completion of every timebox",
-   "The escalation of an issue to the Governance Board",
-   "The agreement of a procurement contract"
+   "Approval of the Project Management Plan by the Sponsor",
+   "Successful completion of every timebox",
+   "Escalation of an issue to the Governance Board",
+   "Agreement of a procurement contract"
   ],
   "hint": "Continuous improvement responds to things going wrong.",
   "explanation": "Any failures in testing, or in audits against the standards, will trigger continuous improvement.",
@@ -4623,12 +4623,12 @@
   "id": "g6-034",
   "topic": "Quality & Project Reviews",
   "question": "When do project reviews take place?",
-  "correct": "Throughout the project life cycle to check the likely or actual achievement of the objectives specified in the project management plan",
+  "correct": "Throughout the project life cycle, to check achievement of the objectives in the PMP",
   "distractors": [
-   "Only at the end of the project after closure",
-   "Only when an issue is escalated to the Sponsor",
-   "Only during the Definition phase before the baseline is set",
-   "Only after a timebox or sprint is completed"
+   "At the end of the project, after the closure phase",
+   "When an issue is escalated to the Sponsor",
+   "During the Definition phase, before the baseline is approved",
+   "After a timebox or sprint is fully completed"
   ],
   "hint": "They check achievement of objectives in the PMP.",
   "explanation": "Project reviews take place throughout the project life cycle to check the likely or actual achievement of the objectives specified in the project management plan.",
@@ -4653,7 +4653,7 @@
   "id": "g6-036",
   "topic": "Quality & Project Reviews",
   "question": "What are Project Evaluation Reviews, Stage Reviews, Post Project Review and Benefits Reviews held to do?",
-  "correct": "Monitor progress, evaluate the project against its Project Management Plan and Business Case and provide a basis for reporting",
+  "correct": "Monitor progress, evaluate against the PMP and Business Case, and provide a basis for reporting",
   "distractors": [
    "Check against standards, formally and informally",
    "Decide whether to continue with the project or close it",
