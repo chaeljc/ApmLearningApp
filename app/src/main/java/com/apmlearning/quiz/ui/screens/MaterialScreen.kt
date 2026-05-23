@@ -6,11 +6,18 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.ArrowForward
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -57,9 +64,10 @@ fun MaterialListScreen(vm: QuizViewModel) {
 
 @Composable
 fun MaterialDetailScreen(vm: QuizViewModel) {
-    BackHandler { vm.backToMaterialList() }
+    BackHandler { vm.closeMaterialDetail() }
 
     val section = vm.selectedSection ?: return
+    val fromQuiz = vm.materialOpenedFromQuiz
 
     Column(
         modifier = Modifier
@@ -69,8 +77,12 @@ fun MaterialDetailScreen(vm: QuizViewModel) {
     ) {
         GradientHeader(
             title = section.title,
-            subtitle = "APM Foundation course material",
-            onBack = { vm.backToMaterialList() },
+            subtitle = if (fromQuiz) {
+                "Course material · linked from your quiz"
+            } else {
+                "APM Foundation course material"
+            },
+            onBack = { vm.closeMaterialDetail() },
         )
 
         Column(modifier = Modifier.padding(20.dp)) {
@@ -114,6 +126,25 @@ fun MaterialDetailScreen(vm: QuizViewModel) {
                         }
                         Spacer(Modifier.height(8.dp))
                     }
+                }
+            }
+
+            if (fromQuiz) {
+                Spacer(Modifier.height(20.dp))
+                Button(
+                    onClick = { vm.closeMaterialDetail() },
+                    modifier = Modifier.fillMaxWidth().height(54.dp),
+                    shape = RoundedCornerShape(14.dp),
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = MaterialTheme.colorScheme.primary,
+                    ),
+                ) {
+                    Text(
+                        "Back to your quiz",
+                        style = MaterialTheme.typography.titleMedium,
+                    )
+                    Spacer(Modifier.width(8.dp))
+                    Icon(Icons.AutoMirrored.Filled.ArrowForward, contentDescription = null)
                 }
             }
             Spacer(Modifier.height(8.dp))

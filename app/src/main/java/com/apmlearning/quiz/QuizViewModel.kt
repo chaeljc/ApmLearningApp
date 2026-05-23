@@ -58,6 +58,9 @@ class QuizViewModel(app: Application) : AndroidViewModel(app) {
     var pendingTopic by mutableStateOf<String?>(null)
         private set
 
+    var materialOpenedFromQuiz by mutableStateOf(false)
+        private set
+
     val quizQuestions: List<QuizQuestion> get() = session?.questions ?: emptyList()
     val total: Int get() = quizQuestions.size
     val currentQuestion: QuizQuestion? get() = quizQuestions.getOrNull(current)
@@ -79,16 +82,36 @@ class QuizViewModel(app: Application) : AndroidViewModel(app) {
 
     fun backToTopicsFromSize() { screen = Screen.TOPIC_PICK }
 
-    fun openMaterialList() { screen = Screen.MATERIAL_LIST }
+    fun openMaterialList() {
+        materialOpenedFromQuiz = false
+        screen = Screen.MATERIAL_LIST
+    }
 
     fun openSection(section: MaterialSection) {
         selectedSection = section
+        materialOpenedFromQuiz = false
+        screen = Screen.MATERIAL_DETAIL
+    }
+
+    /** Jump from a quiz question straight into the matching material section. */
+    fun openSectionFromQuiz(topicTitle: String) {
+        val section = material.firstOrNull { it.title == topicTitle } ?: return
+        selectedSection = section
+        materialOpenedFromQuiz = true
         screen = Screen.MATERIAL_DETAIL
     }
 
     fun backToHomeFromMaterial() { screen = Screen.HOME }
 
-    fun backToMaterialList() { screen = Screen.MATERIAL_LIST }
+    /** Close the detail screen: back to the quiz if that's where we came from, otherwise to the list. */
+    fun closeMaterialDetail() {
+        if (materialOpenedFromQuiz) {
+            materialOpenedFromQuiz = false
+            screen = Screen.QUIZ
+        } else {
+            screen = Screen.MATERIAL_LIST
+        }
+    }
 
     // --- Starting a quiz ---
 
