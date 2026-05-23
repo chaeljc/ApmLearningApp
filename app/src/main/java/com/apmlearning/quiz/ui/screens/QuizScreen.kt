@@ -389,7 +389,7 @@ private fun FeedbackCard(vm: QuizViewModel, question: QuizQuestion) {
             SourceQuote(question.raw.source, accent)
             Spacer(Modifier.height(14.dp))
             FilledTonalButton(
-                onClick = { vm.openSectionFromQuiz(question.raw.topic) },
+                onClick = { vm.openSectionFromQuiz(question.raw.topic, question.raw.source) },
                 modifier = Modifier.fillMaxWidth(),
                 shape = RoundedCornerShape(12.dp),
             ) {

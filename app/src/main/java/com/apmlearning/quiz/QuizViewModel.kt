@@ -61,6 +61,10 @@ class QuizViewModel(app: Application) : AndroidViewModel(app) {
     var materialOpenedFromQuiz by mutableStateOf(false)
         private set
 
+    /** Index of the block to scroll to and highlight when opening a section from a question. */
+    var highlightBlockIndex by mutableStateOf<Int?>(null)
+        private set
+
     val quizQuestions: List<QuizQuestion> get() = session?.questions ?: emptyList()
     val total: Int get() = quizQuestions.size
     val currentQuestion: QuizQuestion? get() = quizQuestions.getOrNull(current)
@@ -84,34 +88,145 @@ class QuizViewModel(app: Application) : AndroidViewModel(app) {
 
     fun openMaterialList() {
         materialOpenedFromQuiz = false
+        highlightBlockIndex = null
         screen = Screen.MATERIAL_LIST
     }
 
     fun openSection(section: MaterialSection) {
         selectedSection = section
         materialOpenedFromQuiz = false
+        highlightBlockIndex = null
         screen = Screen.MATERIAL_DETAIL
     }
 
-    /** Jump from a quiz question straight into the matching material section. */
-    fun openSectionFromQuiz(topicTitle: String) {
-        val section = material.firstOrNull { it.title == topicTitle } ?: return
+    /**
+     * Jump from a quiz question straight into the matching section, scrolled to the
+     * quoted block. Prefers the topic's own section, but if the source quote can't
+     * be located there it searches the other sections so the user always lands on
+     * the right passage.
+     */
+    fun openSectionFromQuiz(topicTitle: String, sourceQuote: String?) {
+        val primary = material.firstOrNull { it.title == topicTitle } ?: return
+
+        var section = primary
+        var highlight: Int? = null
+
+        if (sourceQuote != null) {
+            highlight = findBlockBySubstring(primary, sourceQuote)
+            if (highlight == null) {
+                for (other in material) {
+                    if (other === primary) continue
+                    val idx = findBlockBySubstring(other, sourceQuote)
+                    if (idx != null) {
+                        section = other
+                        highlight = idx
+                        break
+                    }
+                }
+            }
+            if (highlight == null) {
+                highlight = findBlockByOverlap(primary, sourceQuote)
+            }
+        }
+
         selectedSection = section
+        highlightBlockIndex = highlight
         materialOpenedFromQuiz = true
         screen = Screen.MATERIAL_DETAIL
     }
 
-    fun backToHomeFromMaterial() { screen = Screen.HOME }
+    fun backToHomeFromMaterial() {
+        highlightBlockIndex = null
+        screen = Screen.HOME
+    }
 
     /** Close the detail screen: back to the quiz if that's where we came from, otherwise to the list. */
     fun closeMaterialDetail() {
         if (materialOpenedFromQuiz) {
             materialOpenedFromQuiz = false
+            highlightBlockIndex = null
             screen = Screen.QUIZ
         } else {
+            highlightBlockIndex = null
             screen = Screen.MATERIAL_LIST
         }
     }
+
+    /**
+     * High-precision substring match in [section]. Tries the whole source plus
+     * each individual line of it, with progressively shorter probes, in both
+     * directions (source-contains-block-start and block-contains-source-probe).
+     * Returns null if no substring match is found.
+     */
+    private fun findBlockBySubstring(section: MaterialSection, sourceQuote: String): Int? {
+        val candidates = section.blocks.mapIndexedNotNull { index, block ->
+            val text = blockText(block)
+            if (text.length >= 8) index to text else null
+        }
+        if (candidates.isEmpty()) return null
+
+        val probes = mutableListOf<String>()
+        val whole = normalise(sourceQuote)
+        if (whole.length >= 8) probes.add(whole)
+        sourceQuote.split('\n').forEach { line ->
+            val normLine = normalise(line)
+            if (normLine.length >= 8 && normLine != whole) probes.add(normLine)
+        }
+        if (probes.isEmpty()) return null
+
+        for (probeLen in listOf(80, 50, 25)) {
+            for (probe in probes) {
+                val sourceProbe = probe.take(probeLen).trim()
+                if (sourceProbe.length < 8) continue
+                for ((index, text) in candidates) {
+                    if (text.contains(sourceProbe)) return index
+                    val blockProbe = text.take(probeLen).trim()
+                    if (blockProbe.length >= 8 && sourceProbe.contains(blockProbe)) return index
+                }
+            }
+        }
+        return null
+    }
+
+    /** Word-overlap fallback used only when no substring match exists anywhere. */
+    private fun findBlockByOverlap(section: MaterialSection, sourceQuote: String): Int? {
+        val sourceWords = normalise(sourceQuote)
+            .split(' ').filter { it.length > 3 }.toSet()
+        if (sourceWords.size < 3) return null
+
+        var bestIndex = -1
+        var bestOverlap = 2
+        section.blocks.forEachIndexed { index, block ->
+            val text = blockText(block)
+            if (text.length >= 8) {
+                val overlap = text.split(' ').filter { it.length > 3 }.toSet()
+                    .intersect(sourceWords).size
+                if (overlap > bestOverlap) {
+                    bestOverlap = overlap
+                    bestIndex = index
+                }
+            }
+        }
+        return if (bestIndex >= 0) bestIndex else null
+    }
+
+    private fun blockText(block: com.apmlearning.quiz.data.MaterialBlock): String = when (block) {
+        is com.apmlearning.quiz.data.MaterialBlock.Heading -> ""
+        is com.apmlearning.quiz.data.MaterialBlock.Paragraph -> normalise(block.text)
+        is com.apmlearning.quiz.data.MaterialBlock.Bullets -> block.items.joinToString(" ") { normalise(it) }
+    }
+
+    private fun normalise(s: String): String = s
+        .replace('’', '\'')
+        .replace('‘', '\'')
+        .replace('“', '"')
+        .replace('”', '"')
+        .replace('–', '-')
+        .replace('—', '-')
+        .replace("•", " ")
+        .replace(Regex("\\s+"), " ")
+        .trim()
+        .lowercase()
 
     // --- Starting a quiz ---
 
